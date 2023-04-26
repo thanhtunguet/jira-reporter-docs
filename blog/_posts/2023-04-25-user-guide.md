@@ -3,39 +3,52 @@ layout: post
 title: Hướng dẫn sử dụng
 ---
 
-# Hướng dẫn sử dụng công cụ khai Jira
+# Jira Reporter for FISers
 
-1. Tải extension từ cửa hàng Chrome:
+Bạn là nhân viên của FIS. Mỗi ngày bạn phải khai Jira một lần?
+Mỗi tuần tối thiểu 5 tasks? Hơi mệt nhỉ?
 
-[https://chrome.google.com/webstore/detail/ts-jira/obnpipipboogkpllehbibkikmbkcgpal?hl=en&authuser=0](https://chrome.google.com/webstore/detail/ts-jira/obnpipipboogkpllehbibkikmbkcgpal?hl=en&authuser=0)
+Nhất là nếu công việc bận quá, quên mà cuối tháng mới khai thì ối dồi ôi luôn.
 
-2. Đăng nhập vào website Jira
+Thế nên mình ở đây giúp bạn việc đó.
 
-3. Pin ứng dụng lên thanh taskbar của trình duyệt
+## Hướng dẫn sử dụng
 
-![picture 2](/images/3cfda9cae5498bd192dbee55a2091ff33c1aa15225eba418a7ff7ae21e53fdb3.png)
+Extension này giúp bạn khai task từ Excel và tự động tạo task vào Jira.
+Bạn chỉ cần tải về file template và điền task theo ngày như sau:
 
-4. Thực hiện nhập các thông tin cơ bản
+![assets/excel.jpg](/images/excel.jpg)
 
-- Chọn dự án
+Template này đã thiết lập sẵn cột `date` để bạn kéo thả ngày làm việc trong tháng (loại trừ thứ 7, Chủ nhật)
 
+Bạn khai đủ số task theo ngày mong muốn, kéo từ đầu tháng đến cuối tháng nếu cần, loại bỏ một số ngày không mong muốn (ngày nghỉ, ngày đã khai, ngày cần khai dự án khác)
+
+Mở trình duyệt Chrome (hoặc Edge, Cốc Cốc, ...)
+
+Mở popup của extension `TS Jira` thực hiện thao tác:
+
+- Chọn dự án muốn khai
 - Chọn component
+- Chọn Phase
+- Chọn TypeOfWork
+- Nhập username của người duyệt (PM, leader, ...)
 
-- Chọn phase
+### Cách 1: nhập từ Excel
 
-- Nhập Reporter
+- Sao chép phần bảng excel vừa nhập
+- Paste vào ô `Import task data`
 
-- Chọn type of work
+### Cách 2: sinh tự động
 
-5. Thực hiện nhập dữ liệu từ template excel
+- Bật Autofill
+- Chọn khoảng ngày
+- Loại bỏ những ngày không muốn
+- Nhập mô tả cho task
 
-Link tải template nằm trong popup của extension
+### Tiếp theo
 
-![picture 3](/images/411dc61a0074022b8b7d61e023a379be6f98c95e78647589733d865033bf6733.png)
+- Nhấn submit
 
-6. Sao chép vào phần Import Excel
+Và chờ extension thực hiện nốt công việc.
 
-Lưu ý, bạn chỉ sao chép phần dữ liệu chính, không sao chép phần header (stt, date, weekNum, task)
-Nhớ xóa các dòng trống ở cuối text (nếu có)
-
-7. Submit
+Bạn hãy vào User -> Timesheet để xem lại kết quả khai timesheet của mình nhé ^^

@@ -1,27 +1,35 @@
-title:               Celeste
-url:                 https://nicoelayda.github.io
-baseurl:             ""
+title: QMix Projects
+url: https://qmix-projects.web.app
+baseurl: ""
 
-markdown:            kramdown
-highlighter:         rouge
+markdown: kramdown
+highlighter: rouge
 
-exclude:             ['*.sublime-*', 'README.md', 'LICENSE', 'Gemfile', 'Gemfile.lock', 'vendor/bundle']
+exclude:
+  [
+    "*.sublime-*",
+    "README.md",
+    "LICENSE",
+    "Gemfile",
+    "Gemfile.lock",
+    "vendor/bundle",
+  ]
 
-permalink:           pretty
-paginate:            5
-paginate_path:       /blog/:num
+permalink: pretty
+paginate: 5
+paginate_path: /blog/:num
 
 blog:
   truncated_preview: false
 
 sass:
-  sass_dir:          _sass
-  style:             :compressed
+  sass_dir: _sass
+  style: :compressed
 
 author:
-  name:              Nico Elayda
-  url:               nicoelayda.github.io
-  email:             nico@elayda.com
+  name: Nico Elayda
+  url: nicoelayda.github.io
+  email: nico@elayda.com
 
 plugins:
   - jekyll-coffeescript
